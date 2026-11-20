@@ -52,6 +52,7 @@ Berdasarkan instruksi dari atasan/klien, proyek ini memiliki kebutuhan utama:
 | **ISSUE-18** | *Bank Accounts & Email Update* | 1) Memperbarui rekening pembayaran resmi ke Bank Mandiri (`1670004926746`) dan Bank BCA (`5771470972`) atas nama PT Khaira Berkah Mandiri; 2) Memperbarui email resmi menjadi `tourbaik.id@gmail.com` di seluruh footer, dokumen kebijakan privasi, serta FAQ & controller; 3) Memperbarui entitas hukum perusahaan menjadi PT Khaira Berkah Mandiri. | ✅ Selesai |
 | **ISSUE-19** | *WhatsApp Hotline Update* | Memperbarui seluruh nomor WhatsApp hotline resmi menjadi `081299997703` (`+62 812-9999-7703` / URL `https://wa.me/6281299997703`) pada Top Bar, Hero CTA, Booking Paket, Mobile Navbar, Footer, Floating WhatsApp Widget, Formulir Konsultasi, dan Kebijakan Privasi. | ✅ Selesai |
 | **ISSUE-20** | *Transparent Favicon* | Menghapus background putih pada gambar logo favicon browser menjadi transparan (format PNG 32-bit ARGB anti-aliased), mengenerate berbagai ukuran standar favicon (`favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png`, `favicon.ico`), dan memperbarui tag link favicon di layout master. | ✅ Selesai |
+| **ISSUE-21** | *GitHub Push & Vercel Deployment Setup* | Inisialisasi Git, menghubungkan remote ke `https://github.com/AmrunTajdid/LandingPage-TOURBAIK.git`, dan berhasil push branch `main`. Menyediakan konfigurasi serverless Vercel (`vercel.json`, `api/index.php`, `.vercelignore`, `bootstrap/app.php` dynamic storage path, dan panduan lengkap `DEPLOY_VERCEL.md`). | ✅ Selesai |
 
 ---
 
