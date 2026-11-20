@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+
+    --color-brand-cyan: #22d3ee;
+    --color-brand-cyan-light: #a5f3fc;
+    --color-brand-teal: #14b8a6;
+    --color-brand-teal-light: #ccfbf1;
+    --color-brand-emerald: #0d9488;
+    --color-brand-deep: #0f4c5c;
+    --color-brand-dark: #0a2f35;
+    --color-brand-navy: #05191d;
+    --color-brand-gold: #d4af37;
+    --color-brand-gold-dark: #b38f20;
+    --color-brand-gold-light: #fef08a;
+}
+
+/* Custom Base & Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #ffffff;
+}
+
+/* Guaranteed Solid Dark Backgrounds */
+.bg-tourbaik-hero {
+    background-color: #05191d !important;
+    background-image: linear-gradient(175deg, #05191d 0%, #092c33 45%, #0c3b44 100%) !important;
+}
+
+.bg-tourbaik-dark {
+    background-color: #05191d !important;
+    background-image: linear-gradient(135deg, #05191d 0%, #092c33 50%, #0f4c5c 100%) !important;
+}
+
+/* Text Gradients */
+.text-gradient-tourbaik {
+    background: linear-gradient(135deg, #14b8a6 0%, #06b6d4 50%, #0f4c5c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+    background: linear-gradient(135deg, #22d3ee 0%, #2dd4bf 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+    background: linear-gradient(135deg, #fef08a 0%, #d4af37 60%, #b38f20 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+    background: rgba(5, 25, 29, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(34, 211, 238, 0.25);
+}
+
+/* Overlay Pattern (Applied only as an inner absolute layer, never replaces background-image) */
+.pattern-overlay-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(34, 211, 238, 0.12) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+    pointer-events: none;
+}
+
+/* Pulse animation for Live availability & WA */
+@keyframes softPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 0.85;
+    }
+}
+
+.animate-soft-pulse {
+    animation: softPulse 2.5s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #0d9488;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0f4c5c;
+}
